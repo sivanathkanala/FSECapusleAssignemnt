@@ -1,0 +1,58 @@
+Services :
+
+
+http://localhost:8080/addTask 
+
+Request :
+{
+	
+"taskName" : "My InitialTask7",
+	
+"parenttask" : "parent task",
+	
+"taskStartDate" : "2019-11-18",
+	
+"taskEndDate" : "2019-11-19",
+	
+"priority" : "11"
+
+}
+
+Response:
+success
+---------------------------------------------------------------
+http://localhost:8080/updateTask 
+Request 
+{
+    "id": 7,
+    "parenttask": "parent task",
+    "taskName": "My InitialTask70",
+    "taskStartDate": "2018-12-30",
+    "taskEndDate": "2018-12-30",
+    "priority": 11,
+    "status": "A"
+}
+
+Response:Success
+---------------------------------------------------------------
+http://localhost:8080/deleteTaskById?id=7 
+Request:
+http://localhost:8080/deleteTaskById?id=7
+
+Response:
+success
+---------------------------------------------------------------
+http://localhost:8080/getTaskById?id=7 
+
+Request:
+{
+    "id": 7,
+    "parenttask": "parent task",
+    "taskName": "My InitialTask70",
+    "taskStartDate": "2018-12-30",
+    "taskEndDate": "2018-12-30",
+    "priority": 11,
+    "status": "D"
+}
+---------------------------------------------------------------
+
